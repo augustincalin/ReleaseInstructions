@@ -42,11 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bug.cs" />
+    <Compile Include="Component.cs" />
     <Compile Include="Environment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReleaseInstructions.cs" />
     <Compile Include="ReleaseTask.cs" />
-    <Compile Include="ReleaseTaskEnvironment.cs" />
+    <Compile Include="TargetEnvironment.cs" />
     <Compile Include="Server.cs" />
     <Compile Include="Task.cs" />
     <Compile Include="Universe.cs" />

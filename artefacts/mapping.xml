@@ -1,43 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RetailDeployManager>
- 
   <Application Name="NA Retail">
     <WebsiteSolution Name="RetailNAWebsite" >
       <WebsiteProject Name="RetailWebsite">
         <ZipFilePropertyName>RetailWebsiteNAZipFile</ZipFilePropertyName>
-        <BuildToWatch>EmcWeb</BuildToWatch>
+        
         <DestinationPath>1.Web</DestinationPath>
-        <TfsBuilds>
-          <Trunc>RetailFull</Trunc>
-          <Release>RBRetailFull</Release>
-        </TfsBuilds>
+        
       </WebsiteProject>
  
       <WebsiteProject Name="RetailOldWebsite">
         <ZipFilePropertyName>RetailWebsiteLegacyZipFile</ZipFilePropertyName>
-        <BuildToWatch>RetailOld</BuildToWatch>
+        
         <DestinationPath>1.Web</DestinationPath>
-        <TfsBuilds>
-          <Trunc>RetailFull</Trunc>
-          <Release>RBRetailFull</Release>
-        </TfsBuilds>
+        
       </WebsiteProject>
       <WebsiteProject Name="EmcWebApi">
-        <BuildToWatch>EmcWebApi</BuildToWatch>
+        
         <ZipFilePropertyName>EmcWebApiRetailZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
-        <TfsBuilds>
-          <Trunc>RetailFull</Trunc>
-          <Release>RBRetailFull</Release>
-        </TfsBuilds>
+        
       </WebsiteProject>
       <WebsiteProject Name="Retail MarketChooser">
         <ZipFilePropertyName>RetailMarketChooserZipFile</ZipFilePropertyName>        
         <DestinationPath>1.Web</DestinationPath>
-        <TfsBuilds>
-          <Trunc>RetailFull</Trunc>
-          <Release>RBRetailFull</Release>
-        </TfsBuilds>        
+                
       </WebsiteProject>
     </WebsiteSolution>
  
@@ -46,140 +31,98 @@
         <ZipFilePropertyName>RetailAnalyticsServiceZipFile</ZipFilePropertyName>
         <DestinationPath>2.Analytics</DestinationPath>
         <TargetEnvironments>StagingOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailServices</Trunc>
-          <Release>RBRetailServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="Cleanup Service">
         <ZipFilePropertyName>RetailCleanupServiceZipFile</ZipFilePropertyName>
         <DestinationPath>3.File</DestinationPath>
         <TargetEnvironments>Any</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailServices</Trunc>
-          <Release>RBRetailServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="Document Checker Service">
         <ZipFilePropertyName>RetailDocumentCheckerServiceZipFile</ZipFilePropertyName>
         <DestinationPath>3.File</DestinationPath>
         <TargetEnvironments>LiveOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailServices</Trunc>
-          <Release>RBRetailServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="Email Service">
         <ZipFilePropertyName>RetailEmailServiceZipFile</ZipFilePropertyName>
         <DestinationPath>3.File</DestinationPath>
         <TargetEnvironments>LiveOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailServices</Trunc>
-          <Release>RBRetailServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="File Operation Service">
         <ZipFilePropertyName>RetailFileOperationServiceZipFile</ZipFilePropertyName>
         <DestinationPath>3.File</DestinationPath>
         <TargetEnvironments>LiveOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailServices</Trunc>
-          <Release>RBRetailServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="PCF Upload Service">
         <ZipFilePropertyName>RetailPCFUploadServiceZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
         <TargetEnvironments>StagingOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailServices</Trunc>
-          <Release>RBRetailServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="Portfolio Service">
         <ZipFilePropertyName>RetailPortfolioServiceZipFile</ZipFilePropertyName>
         <DestinationPath>3.File</DestinationPath>
         <TargetEnvironments>LiveOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailServices</Trunc>
-          <Release>RBRetailServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="Product Info Service">
         <ZipFilePropertyName>RetailProductInfoServiceZipFile</ZipFilePropertyName>
         <DestinationPath>4.PIS</DestinationPath>
         <TargetEnvironments>LiveOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailServices</Trunc>
-          <Release>RBRetailServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="Product Refresh Service">
         <ZipFilePropertyName>RetailProductRefreshServiceZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
         <TargetEnvironments>StagingOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailServices</Trunc>
-          <Release>RBRetailServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="Product XML Service">
         <ZipFilePropertyName>RetailProductXMLServiceZipFile</ZipFilePropertyName>
         <DestinationPath>3.File</DestinationPath>
         <TargetEnvironments>LiveOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailServices</Trunc>
-          <Release>RBRetailServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="Subscription Emails Service">
         <ZipFilePropertyName>RetailSubscriptionEmailsServiceZipFile</ZipFilePropertyName>
         <DestinationPath>3.File</DestinationPath>
         <TargetEnvironments>LiveOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailServices</Trunc>
-          <Release>RBRetailServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="Lightstreamer Adapter Service">
         <ZipFilePropertyName>LightstreamerAdapterServiceZipFile</ZipFilePropertyName>
         <DestinationPath>4.PIS</DestinationPath>
         <TargetEnvironments>LiveOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailServices</Trunc>
-          <Release>RBRetailServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="ProductCounts Lightstreamer Adapter Service">
         <ZipFilePropertyName>RetailProductCountsLightstreamerAdapterServiceZipFile</ZipFilePropertyName>
         <DestinationPath>4.PIS</DestinationPath>
         <TargetEnvironments>LiveOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailServices</Trunc>
-          <Release>RBRetailServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="Strike Barrier Service">
         <ZipFilePropertyName>RetailStrikeBarrierServiceZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
         <TargetEnvironments>StagingOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailServices</Trunc>
-          <Release>RBRetailServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
     </ServiceSolution>
   </Application>
@@ -188,32 +131,23 @@
     <WebsiteSolution Name="CbIndexNAWebsite" >
       <WebsiteProject Name="CBIndexWebsite">
         <ZipFilePropertyName>CbIndexWebsiteNAZipFile</ZipFilePropertyName>
-        <BuildToWatch>EmcWeb</BuildToWatch>
+        
         <DestinationPath>1.Web</DestinationPath>
-        <TfsBuilds>
-          <Trunc>CbIndexFull</Trunc>
-          <Release>RBCbIndexFull</Release>
-        </TfsBuilds>
+        
       </WebsiteProject>
  
       <WebsiteProject Name="CbIndexOldWebsite">
         <ZipFilePropertyName>CbIndexWebsiteLegacyZipFile</ZipFilePropertyName>
-        <BuildToWatch>CbIndexOld</BuildToWatch>
+        
         <DestinationPath>1.Web</DestinationPath>
-        <TfsBuilds>
-          <Trunc>CbIndexFull</Trunc>
-          <Release>RBCbIndexFull</Release>
-        </TfsBuilds>
+        
       </WebsiteProject>
  
       <WebsiteProject Name="EmcWebApi">
         <ZipFilePropertyName>EmcWebApiCbIndexZipFile</ZipFilePropertyName>
-        <BuildToWatch>EmcWebApi</BuildToWatch>
+        
         <DestinationPath>1.Web</DestinationPath>
-        <TfsBuilds>
-          <Trunc>CbIndexFull</Trunc>
-          <Release>RBCbIndexFull</Release>
-        </TfsBuilds>
+        
       </WebsiteProject>
     </WebsiteSolution>
  
@@ -222,10 +156,7 @@
         <ZipFilePropertyName>RetailProductCountsLightstreamerAdapterServiceZipFile</ZipFilePropertyName>
         <DestinationPath>4.PIS</DestinationPath>
         <TargetEnvironments>LiveOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailServices</Trunc>
-          <Release>RBRetailServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
     </ServiceSolution>
   </Application>
@@ -235,19 +166,13 @@
       <WebsiteProject Name="NewCoWebsite">
         <ZipFilePropertyName>NewCoWebsiteNAZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
-        <TfsBuilds>
-          <Trunc>NewCoFull</Trunc>
-          <Release>RBNewCoFull</Release>
-        </TfsBuilds>
+        
       </WebsiteProject>
  
       <WebsiteProject Name="EmcWebApi">
         <ZipFilePropertyName>EmcWebApiNewCoZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
-        <TfsBuilds>
-          <Trunc>EmcWebApi</Trunc>
-          <Release>EmcWebApi</Release>
-        </TfsBuilds>
+        
       </WebsiteProject>
     </WebsiteSolution>
   </Application>
@@ -257,19 +182,13 @@
       <WebsiteProject Name="FimWebsite">
         <ZipFilePropertyName>FimWebsiteNAZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
-        <TfsBuilds>
-          <Trunc>FimFull</Trunc>
-          <Release>RBFimFull</Release>
-        </TfsBuilds>
+        
       </WebsiteProject>
  
       <WebsiteProject Name="EmcWebApi">
         <ZipFilePropertyName>EmcWebApiFimZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
-        <TfsBuilds>
-          <Trunc>EmcWebApi</Trunc>
-          <Release>EmcWebApi</Release>
-        </TfsBuilds>
+        
       </WebsiteProject>
     </WebsiteSolution>
   </Application>
@@ -280,10 +199,7 @@
         <ZipFilePropertyName>RetailPrerenderServiceZipFile</ZipFilePropertyName>
         <DestinationPath>2.Analytics</DestinationPath>
         <TargetEnvironments>StagingOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>RetailPrerenderService</Trunc>
-          <Release>RBRetailPrerenderService</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
     </ServiceSolution>
   </Application>
@@ -292,29 +208,20 @@
     <WebsiteSolution Name="ETFWebsites">
       <WebsiteProject Name="ETFWebsite">
         <ZipFilePropertyName>ETFWebsiteZipFile</ZipFilePropertyName>
-        <TfsBuilds>
-          <Trunc>ETFWebsites</Trunc>
-          <Release>RBETFWebsites</Release>
-        </TfsBuilds>
+        
         <DestinationPath>1.Web</DestinationPath>
       </WebsiteProject>
  
       <WebsiteProject Name="ETFMarketChooser">
         <ZipFilePropertyName>ETFMarketChooserZipFile</ZipFilePropertyName>
-        <TfsBuilds>
-          <Trunc>ETFWebsites</Trunc>
-          <Release>RBETFWebsites</Release>
-        </TfsBuilds>
+        
         <DestinationPath>1.Web</DestinationPath>
       </WebsiteProject>
  
       <WebsiteProject Name="ETFMarketChooserHK">
         <ZipFilePropertyName>ETFMarketChooserHKZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
-        <TfsBuilds>
-          <Trunc>ETFWebsites</Trunc>
-          <Release>RBETFWebsites</Release>
-        </TfsBuilds>
+        
       </WebsiteProject>
     </WebsiteSolution>
  
@@ -323,60 +230,42 @@
         <ZipFilePropertyName>ETFProductRefreshServiceZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
         <TargetEnvironments>StagingOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>ETFServices</Trunc>
-          <Release>RBETFServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="Constituents Service">
         <ZipFilePropertyName>ETFConstituentsRefreshServiceZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
         <TargetEnvironments>StagingOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>ETFServices</Trunc>
-          <Release>RBETFServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="Document Checker Service">
         <ZipFilePropertyName>ETFDocumentCheckerServiceZipFile</ZipFilePropertyName>
         <DestinationPath>3.File</DestinationPath>
         <TargetEnvironments>LiveOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>ETFServices</Trunc>
-          <Release>RBETFServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="Portfolio Service">
         <ZipFilePropertyName>ETFPortfolioServiceZipFile</ZipFilePropertyName>
         <DestinationPath>3.File</DestinationPath>
         <TargetEnvironments>LiveOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>ETFServices</Trunc>
-          <Release>RBETFServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="Product Info Service">
         <ZipFilePropertyName>ETFProductInfoServiceZipFile</ZipFilePropertyName>
         <DestinationPath>4.PIS</DestinationPath>
         <TargetEnvironments>LiveOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>ETFServices</Trunc>
-          <Release>RBETFServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
  
       <ServiceProject Name="Factsheet Service">
         <ZipFilePropertyName>ETFFactsheetServiceZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
         <TargetEnvironments>StagingOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>ETFServices</Trunc>
-          <Release>RBETFServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
     </ServiceSolution>
   </Application>
@@ -386,10 +275,7 @@
     <WebsiteSolution Name="IdeasTVWebsite" >
       <WebsiteProject Name="IdeasTVWebsite">
         <ZipFilePropertyName>IdeasTVWebsiteZipFile</ZipFilePropertyName>
-        <TfsBuilds>
-          <Trunc>IdeasTVWebsite</Trunc>
-          <Release>RBIdeasTVWebsite</Release>
-        </TfsBuilds>
+        
         <DestinationPath>1.Web</DestinationPath>
       </WebsiteProject>
     </WebsiteSolution>
@@ -399,10 +285,7 @@
         <ZipFilePropertyName>IdeasTVProductRefreshServiceZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
         <TargetEnvironments>StagingOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>IdeasTVServices</Trunc>
-          <Release>RBIdeasTVServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
     </ServiceSolution>
   </Application>
@@ -413,19 +296,13 @@
       <WebsiteProject Name="AMWebsite">
         <ZipFilePropertyName>AMWebsiteZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>        
-        <TfsBuilds>
-          <Trunc>AMWebsite</Trunc>
-          <Release>RBAMWebsite</Release>
-        </TfsBuilds>
+        
       </WebsiteProject>
  
       <WebsiteProject Name="AMMarketChooser">
         <ZipFilePropertyName>AMMarketChooserZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
-        <TfsBuilds>
-          <Trunc>AMWebsite</Trunc>
-          <Release>RBAMWebsite</Release>
-        </TfsBuilds>
+        
       </WebsiteProject>
     </WebsiteSolution>
  
@@ -434,10 +311,7 @@
         <ZipFilePropertyName>AMProductRefreshServiceZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
         <TargetEnvironments>StagingOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>AMServices</Trunc>
-          <Release>RBAMServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
     </ServiceSolution>
   </Application>
@@ -447,10 +321,7 @@
     <WebsiteSolution Name="ETFMarketMakingWebsite" >
       <WebsiteProject Name="ETFMarketMakingWebsite">
         <ZipFilePropertyName>ETFMarketMakingWebsiteZipFile</ZipFilePropertyName>
-        <TfsBuilds>
-          <Trunc>ETFMarketMakingWebsite</Trunc>
-          <Release>RBETFMarketMakingWebsite</Release>
-        </TfsBuilds>
+        
         <DestinationPath>1.Web</DestinationPath>
       </WebsiteProject>
     </WebsiteSolution>
@@ -460,10 +331,7 @@
     <WebsiteSolution Name="ComStageClubGespraechWebsite" >
       <WebsiteProject Name="ComStageClubGespraechWebsite">
         <ZipFilePropertyName>ComStageClubGespraechWebsiteZipFile</ZipFilePropertyName>
-        <TfsBuilds>
-          <Trunc>ComStageClubGespraechWebsite</Trunc>
-          <Release>RBComStageClubGespraechWebsite</Release>
-        </TfsBuilds>
+        
         <DestinationPath>1.Web</DestinationPath>
       </WebsiteProject>
     </WebsiteSolution>
@@ -473,10 +341,7 @@
     <WebsiteSolution Name="IFAWebsites" >
       <WebsiteProject Name="IFAWebsite">
         <ZipFilePropertyName>IFAWebsiteZipFile</ZipFilePropertyName>
-        <TfsBuilds>
-          <Trunc>IFAWebsite</Trunc>
-          <Release>RBIFAWebsite</Release>
-        </TfsBuilds>
+        
         <DestinationPath>1.Web</DestinationPath>
       </WebsiteProject>
     </WebsiteSolution>
@@ -486,10 +351,7 @@
         <ZipFilePropertyName>IFAProductRefreshServiceZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
         <TargetEnvironments>StagingOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>IFAServices</Trunc>
-          <Release>RBIFAServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
     </ServiceSolution>
   </Application>
@@ -499,18 +361,12 @@
       <WebsiteProject Name="CRM MVC Website">
         <ZipFilePropertyName>CRMMvcWebsiteZipFile</ZipFilePropertyName>
         <DestinationPath>5.CRM</DestinationPath>
-        <TfsBuilds>
-          <Trunc>CRM</Trunc>
-          <Release>RBCRM</Release>
-        </TfsBuilds>
+        
       </WebsiteProject>
  
       <WebsiteProject Name="CRM API Website">
         <ZipFilePropertyName>CRMApiWebsiteZipFile</ZipFilePropertyName>
-        <TfsBuilds>
-          <Trunc>CRM</Trunc>
-          <Release>RBCRM</Release>
-        </TfsBuilds>
+        
         <DestinationPath>5.CRM</DestinationPath>
       </WebsiteProject>
     </WebsiteSolution>
@@ -520,10 +376,7 @@
         <ZipFilePropertyName>EvalancheSyncServiceZipFile</ZipFilePropertyName>
         <DestinationPath>5.CRM</DestinationPath>
         <TargetEnvironments>StagingOnly</TargetEnvironments>
-        <TfsBuilds>
-          <Trunc>CRMServices</Trunc>
-          <Release>RBCRMServices</Release>
-        </TfsBuilds>
+        
       </ServiceProject>
     </ServiceSolution>
   </Application>
@@ -532,10 +385,7 @@
     <WebsiteSolution Name="MobileWebsite" >
       <WebsiteProject Name="MobileWebsite">
         <ZipFilePropertyName>MobileWebsiteZipFile</ZipFilePropertyName>
-        <TfsBuilds>
-          <Trunc>MobileWebsite</Trunc>
-          <Release>RBMobileWebsite</Release>
-        </TfsBuilds>
+        
         <DestinationPath>1.Web</DestinationPath>
       </WebsiteProject>
     </WebsiteSolution>
@@ -546,10 +396,7 @@
       <WebsiteProject Name="VideoWebsite">
         <ZipFilePropertyName>VideoWebsiteZipFile</ZipFilePropertyName>
         <DestinationPath>1.Web</DestinationPath>
-        <TfsBuilds>
-          <Trunc>CbVideoWebsite</Trunc>
-          <Release>CbVideoWebsite</Release>
-        </TfsBuilds>
+        
       </WebsiteProject>
     </WebsiteSolution>
   </Application>
@@ -558,10 +405,7 @@
     <DesktopSolution Name="CMS">
       <DesktopProject Name="CMS" IsClickOnce="true">
         <ZipFilePropertyName>CMSZipFile</ZipFilePropertyName>
-        <TfsBuilds>
-          <Trunc>CMS-ClickOnce</Trunc>
-          <Release>RBCMS-ClickOnce</Release>
-        </TfsBuilds>
+        
         <DestinationPath>7.CMS</DestinationPath>
       </DesktopProject>
     </DesktopSolution>
@@ -571,9 +415,7 @@
     <DesktopSolution Name="CBNT">
       <DesktopProject Name="CBNT">
         <ZipFilePropertyName>CBNTZipFile</ZipFilePropertyName>
-        <TfsBuilds>
-          <Release>RB CBNT</Release>
-        </TfsBuilds>
+        
         <DestinationPath>8.CBNT</DestinationPath>
       </DesktopProject>
     </DesktopSolution>
@@ -584,12 +426,8 @@
       <DesktopProject Name="RetailDeployFramework">
         <ZipFilePropertyName>RetailDeployFrameworkMSIFile</ZipFilePropertyName>
         <DestinationPath>.</DestinationPath>
-        <TfsBuilds>
-          <Trunc>RetailDeployFramework</Trunc>
-          <Release>RetailDeployFramework</Release>
-        </TfsBuilds>
+        
       </DesktopProject>
     </DesktopSolution>
   </Application>
  
-</RetailDeployManager>
